@@ -1,0 +1,11 @@
+.nav-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: cadetblue;
+}
+nav a {
+  padding-right: 1rem;
+}

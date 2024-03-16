@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "name": "tamil",
+      "d.o.b": "14-09-1999",
+      "class": 10,
+      "school": "milidhane"
+    },
+    {
+      "name": "jp",
+      "d.o.b": "12-12-1999",
+      "class": 10,
+      "school": "kavindhapadi"
+    },
+    {
+      "name": "nandha",
+      "d.o.b": "14-09-2000",
+      "class": 10,
+      "school": "gobi"
+    },
+    {
+      "name": "vishva",
+      "d.o.b": "14-06-2000",
+      "class": 10,
+      "school": "mettur"
+    }
+  ]
+}
