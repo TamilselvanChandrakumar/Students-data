@@ -1,23 +1,9 @@
 import React, { useEffect, useState } from "react";
 import StudentCard from "../../components/StudentCard/StudentCard";
 import "./Home.css";
+import { useFetch } from "../../hooks/useFetch";
 const Home = () => {
-  const [data, setData] = useState([]);
-  const [err, setErr] = useState("");
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/students");
-      const jsonresponse = await response.json();
-
-      if (response.ok) {
-        console.log(jsonresponse);
-        setData(jsonresponse);
-      } else {
-        setErr(jsonresponse.error);
-      }
-    };
-    fetchData();
-  }, []);
+  const { data, error, isLoading } = useFetch("http://localhost:8000/students");
   return (
     <>
       <div className="card-container">
@@ -29,6 +15,8 @@ const Home = () => {
             })
           : null}
       </div>
+      {error && <h1>{error}</h1>}
+      {isLoading && <h1>Loading data...</h1>}
     </>
   );
 };

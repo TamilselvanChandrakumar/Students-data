@@ -27,6 +27,41 @@
       "dob": "14-06-2000",
       "class": 10,
       "school": "mettur"
+    },
+    {
+      "name": "chandru",
+      "dob": "02-02-2000",
+      "classstd": "12",
+      "school": "kotagiri",
+      "id": 5
+    },
+    {
+      "name": "chandru",
+      "dob": "02-02-2000",
+      "classstd": "12",
+      "school": "kotagiri",
+      "id": 6
+    },
+    {
+      "name": "saravanan",
+      "dob": "02-02-2000",
+      "classstd": "12",
+      "school": "csi kotagiri",
+      "id": 7
+    },
+    {
+      "name": "gowtham",
+      "dob": "02-02-2000",
+      "classstd": "12",
+      "school": "kotagiri",
+      "id": 8
+    },
+    {
+      "name": "Tamilselvan C",
+      "dob": "14-09-1999",
+      "classstd": "12",
+      "school": "kotagiri",
+      "id": 9
     }
   ]
 }
