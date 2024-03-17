@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export const useFetch = (url, method = "GET") => {
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [options, setOptions] = useState(null);
-  const navigate = useNavigate();
+
   const optionsData = (data) => {
     if (method === "POST") {
       setOptions({
@@ -14,6 +13,14 @@ export const useFetch = (url, method = "GET") => {
         body: JSON.stringify(data),
         headers: {
           "Content-type": "application/json;charset=UTF-8",
+        },
+      });
+    } else if (method === "PATCH") {
+      setOptions({
+        method: "PATCH",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-type": "application/json;charset=utf-8",
         },
       });
     }
@@ -36,7 +43,7 @@ export const useFetch = (url, method = "GET") => {
     };
     if (method === "GET") {
       fetchData();
-    } else if (method === "POST" && options) {
+    } else if ((method === "POST" || method === "PATCH") && options) {
       fetchData(options);
     }
   }, [url, method, options]);

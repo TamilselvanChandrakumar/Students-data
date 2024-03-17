@@ -11,7 +11,7 @@ const StudentCard = ({ studentData }) => {
       <div className="card" onClick={handleCardClick}>
         <h1>{studentData.name}</h1>
         <p>{studentData.dob}</p>
-        <p>{studentData.class}</p>
+        <p>{studentData.classstd}</p>
         <p>{studentData.school}</p>
       </div>
     </>

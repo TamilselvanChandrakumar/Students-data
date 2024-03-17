@@ -1,16 +1,20 @@
 import React from "react";
 import "./PostDetails.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 const PostDetail = () => {
   const location = useLocation();
-  const { state } = location;
+  const { state: data } = location;
+  const navigate = useNavigate();
+  const handleEditClick = () => {
+    navigate(`/edit/${data.id}`, { state: data });
+  };
   return (
     <>
-      <h1>{state.name}</h1>
-      <p>{state.dob}</p>
-      <p>{state.class}</p>
-      <p>{state.school}</p>
-      <button>edit</button>
+      <h1>{data.name}</h1>
+      <p>{data.dob}</p>
+      <p>{data.class}</p>
+      <p>{data.school}</p>
+      <button onClick={handleEditClick}>edit</button>
       <button>delete</button>
     </>
   );
