@@ -16,14 +16,6 @@
       "school": "kavindhapadi"
     },
     {
-      "id": 3,
-      "name": "nandha kumar k",
-      "dob": "14-09-2000",
-      "classstd": 10,
-      "school": "gobicheetipalaym",
-      "class": "12"
-    },
-    {
       "id": 4,
       "name": "vishva",
       "dob": "14-06-2000",
@@ -51,20 +43,6 @@
       "school": "csi kotagiri",
       "id": 7,
       "class": "10"
-    },
-    {
-      "name": "gowtham",
-      "dob": "02-02-2000",
-      "classstd": 12,
-      "school": "kotagiri",
-      "id": 8
-    },
-    {
-      "name": "Tamilselvan C",
-      "dob": "14-09-1999",
-      "classstd": "9",
-      "school": "kotagiri",
-      "id": 9
     }
   ]
 }
