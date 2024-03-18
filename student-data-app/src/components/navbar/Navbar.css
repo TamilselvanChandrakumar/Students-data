@@ -1,11 +1,27 @@
 .nav-container {
-  width: 100%;
+  width: calc(100% - 100px);
+  margin: auto;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border-radius: 15px;
   background-color: cadetblue;
 }
-nav a {
+nav a,
+.nav-container a {
   padding-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+nav a:hover,
+.nav-container a:hover {
+  color: azure;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    width: 100%;
+  }
 }
