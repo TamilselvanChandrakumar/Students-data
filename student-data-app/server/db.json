@@ -5,15 +5,8 @@
       "name": "tamil selvan  C",
       "dob": "14-09-1999",
       "classstd": "12",
-      "school": "milidhane ",
+      "school": "milidhane ,Kotagiri",
       "class": "12"
-    },
-    {
-      "id": 2,
-      "name": "jp",
-      "dob": "12-12-1999",
-      "classstd": 10,
-      "school": "kavindhapadi"
     },
     {
       "id": 4,
@@ -32,7 +25,7 @@
     {
       "name": "chandru",
       "dob": "02-02-2000",
-      "classstd": 12,
+      "classstd": "10",
       "school": "kotagiri",
       "id": 6
     },
@@ -43,6 +36,20 @@
       "school": "csi kotagiri",
       "id": 7,
       "class": "10"
+    },
+    {
+      "name": "Joyal",
+      "dob": "02-02-2000",
+      "classstd": "12",
+      "school": "Bengaluru",
+      "id": 8
+    },
+    {
+      "name": "Tamilselvan C",
+      "dob": "14-09-1999",
+      "classstd": "12",
+      "school": "kotagiri",
+      "id": 9
     }
   ]
 }

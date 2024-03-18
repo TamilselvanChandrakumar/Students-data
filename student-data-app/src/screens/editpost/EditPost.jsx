@@ -69,47 +69,53 @@ const EditPost = () => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={onNameChange}
-          ></input>
-        </div>
-        <div>
-          <label htmlFor="dob">dob</label>
-          <input
-            type="text"
-            id="dob"
-            value={dob}
-            onChange={onDobChange}
-          ></input>
-        </div>
-        <div>
-          <label htmlFor="class">class</label>
-          <input
-            type="number"
-            id="class"
-            value={classstd}
-            onChange={onClassChange}
-          ></input>
-        </div>
-        <div>
-          <label htmlFor="school">school</label>
-          <input
-            type="text"
-            id="school"
-            value={school}
-            onChange={onSchoolChange}
-          ></input>
-        </div>
-        {validationError && <h1>{validationError}</h1>}
-        {data.length !== 0 && <h1>post created successfully</h1>}
-        <button type="submit">Update</button>
-      </form>
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={onNameChange}
+            ></input>
+          </div>
+          <div>
+            <label htmlFor="dob">dob</label>
+            <input
+              type="text"
+              id="dob"
+              value={dob}
+              onChange={onDobChange}
+            ></input>
+          </div>
+          <div>
+            <label htmlFor="class">class</label>
+            <input
+              type="number"
+              id="class"
+              value={classstd}
+              onChange={onClassChange}
+            ></input>
+          </div>
+          <div>
+            <label htmlFor="school">school</label>
+            <input
+              type="text"
+              id="school"
+              value={school}
+              onChange={onSchoolChange}
+            ></input>
+          </div>
+          {validationError && <h1>{validationError}</h1>}
+          {data.length !== 0 && (
+            <h1 className="successfull">Details Updated successfully</h1>
+          )}
+          <div>
+            <button type="submit">Update</button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };
