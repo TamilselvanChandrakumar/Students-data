@@ -11,7 +11,7 @@ const PostDetail = () => {
     "DELETE"
   );
   const handleEditClick = () => {
-    navigate(`/edit/${data.id}`, { state: data });
+    navigate(`/edit/${dataval.id}`, { state: dataval });
   };
   const handleDelete = () => {
     optionsData();
@@ -25,13 +25,19 @@ const PostDetail = () => {
 
   return (
     <>
-      <h1>{dataval.name}</h1>
-      <p>{dataval.dob}</p>
-      <p>{dataval.class}</p>
-      <p>{dataval.school}</p>
-      <button onClick={handleEditClick}>edit</button>
-      <button onClick={handleDelete}>delete</button>
-      {data.length !== 0 && <h1>Post Deleted Successfully</h1>}
+      <div className="postdetail-container">
+        <div className="postdeatil-card">
+          <h1>{dataval.name}</h1>
+          <p>{dataval.dob}</p>
+          <p>{dataval.class}</p>
+          <p>{dataval.school}</p>
+          <button onClick={handleEditClick}>edit</button>
+          <button onClick={handleDelete}>delete</button>
+        </div>
+      </div>
+      <div className="postdetail-error">
+        {data.length !== 0 && <h1>Post Deleted Successfully</h1>}
+      </div>
     </>
   );
 };

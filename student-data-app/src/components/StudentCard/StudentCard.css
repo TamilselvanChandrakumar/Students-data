@@ -12,3 +12,7 @@
   font-weight: 700;
   text-align: center;
 }
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+}

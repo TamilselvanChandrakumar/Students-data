@@ -1,0 +1,23 @@
+.postdetail-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postdeatil-card {
+  padding: 2rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+}
+.postdeatil-card button {
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: aqua;
+}
